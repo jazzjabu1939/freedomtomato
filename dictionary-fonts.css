@@ -1,0 +1,18 @@
+/* Alternate typography preview; original remains unchanged. */
+body{font-family:"Source Serif 4",Georgia,serif;font-size:19px}
+h1,h2,h3,.brand,nav,.button,.text-link,.more{font-family:"Space Grotesk",system-ui,sans-serif}
+h1,h2,h3{font-weight:500}
+h1{letter-spacing:-.055em;font-size:clamp(58px,8vw,106px)}
+h1 em{font-style:normal;font-weight:500}
+.brand{font-weight:700;font-size:26px;letter-spacing:-1px}
+.eyebrow,.tag,.label,footer,.work-note{font-family:"JetBrains Mono",monospace}
+.eyebrow,.tag{letter-spacing:.08em;font-weight:500}
+.label{font-size:12px}
+.cards p{font-size:18px}
+footer{font-size:11px}
+@media(max-width:760px){h1{font-size:clamp(48px,11vw,76px)}.brand{font-size:25px}.eyebrow{font-size:10px}}
+
+/* Selected header mark: preserve the red orb and add only a tiny stem. */
+.brand .tomato{position:relative;display:inline-block}
+.brand .tomato::after{content:"";position:absolute;width:12px;height:10.8px;background:var(--green);clip-path:polygon(38% 100%,38% 57%,0 25%,13% 9%,40% 34%,40% 0,60% 0,60% 34%,87% 9%,100% 25%,62% 57%,62% 100%);left:calc(30% - 4px);top:13px;transform:rotate(-25deg);transform-origin:bottom center}
+.brand .period{color:var(--green)}
